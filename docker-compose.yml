@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dnn-emg
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/workdir
